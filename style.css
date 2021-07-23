@@ -64,7 +64,6 @@ html {
 
 /* Typography styles */
 body {
-    padding: 5%;
     border: 2px solid orange;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
@@ -81,4 +80,44 @@ nav {
 
 section {
     border: 2px solid blue;
+}
+
+h2,h3,h4,h5,h6 {
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 0.9rem;
+    font-size: 1rem;
+}
+nav a {
+    padding: 0.25rem
+}
+
+.button {
+    text-decoration: none;
+    border: 2px solid;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 400;
+}
+/*---------- header & Footer ------------*/
+header {
+    padding: 2% 5%;
 }
