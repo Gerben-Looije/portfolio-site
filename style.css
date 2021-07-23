@@ -121,3 +121,34 @@ nav a {
 header {
     padding: 2% 5%;
 }
+
+/* Icon Grid Section  */
+.icon-section img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+/*---------- Background images ------------*/
+.bg-image {
+    background-color: rgb(240,240,240);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/plant.jpg');
+}
+
+.bg-plant {
+    background-image: url('/images/plant.jpg');
+    background-position: 50% 43%;
+}
+
+.bg-meeting {
+    background-image: url('/images/meeting.jpg');
+}
+
+.bg-plant-2 {
+    background-image: url('/images/plant-2.jpg');
+    background-position: 75% 50%;
+}
+    
