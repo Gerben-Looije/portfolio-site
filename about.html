@@ -1,19 +1,29 @@
 ---
 layout: default
 banner_images: /images/plant.jpg
-team: 
- - name: Greg 
-   bio: Big Boss Coder
-   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
-   profile_images: /images/profile-1.jpg
- - name: Jane
-   bio: Big Boss Coder
-   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
-   profile_images: /images/profile-3.jpg
- - name: Johnny 
-   bio: Designer/ part time model
-   discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
-   profile_images: /images/profile-2.jpg
+team:
+  - name: Greg
+    bio: Big Boss Coder
+    discription: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae
+      minus.
+    profile_images: /images/profile-1.jpg
+  - name: Jane
+    bio: Big Boss Coder
+    discription: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae
+      minus.
+    profile_images: /images/profile-3.jpg
+  - name: Johnny
+    bio: Designer/ part time model
+    discription: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae
+      minus.
+    profile_images: /images/profile-2.jpg
+  - name:
+    bio:
+    discription:
+    profile_images:
 about-video-id: QILiHiTD3uc
 ---
 
@@ -36,7 +46,7 @@ about-video-id: QILiHiTD3uc
 
         <div class="grid flex-flip-alternate">
             <div class="col-5 padded-2">
-                <img src="{{ person.profile_images }}" class="profile-images bg-color"> 
+                <img src="{{ person.profile_images }}" class="profile-images bg-color" /> 
             </div>
 
             <div class="col-7-middle padded-1"> 
@@ -60,10 +70,8 @@ about-video-id: QILiHiTD3uc
         <p class="emphasis editable"> Feat. j-bomb the terrier </p>
     </div> 
     <div class="padded-1">
-        <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ page.about-video-id }}' 
-            frameborder='0' allowfullscreen></iframe>
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ page.about-video-id }}' frameborder='0' allowfullscreen></iframe>
         </div>
     </div>
 
 </section>
-
