@@ -1,18 +1,20 @@
 ---
 layout: default
+banner_images: /images/plant.jpg
 team: 
  - name: Greg 
    bio: Big Boss Coder
    discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
-   profile_images: /image/profile-1.jpg
+   profile_images: /images/profile-1.jpg
  - name: Jane
    bio: Big Boss Coder
    discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
-   profile_images: /image/profile-2.jpg
+   profile_images: /images/profile-3.jpg
  - name: Johnny 
    bio: Designer/ part time model
    discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
-   profile_images: /image/profile-3.jpg
+   profile_images: /images/profile-2.jpg
+about-video-id: QILiHiTD3uc
 ---
 
 <section class="tall-60 grid bg-green"> 
@@ -21,23 +23,24 @@ team:
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga autem at alias cum illum voluptas eligendi nihil, incidunt consequatur ducimus eaque!
             Distinctio quam repudiandae dolorem aliquid non, deleniti nisi ea?</p>
     </div>
-    <div class="col-7 bg-image bg-plant"> 
+    <div class="col-7 bg-image bg-plant" style="background-image: url('{{page.banner_images}}');"> 
 
     </div>    
 
 </section>
 
 <section class="padded"> 
+    <div class="capped-width">
 
     {% for person in page.team %}
 
-        <div class="grid">
-            <div class="col-5 padded-1">
-                <img src="{{ person.profile_images }}">
+        <div class="grid flex-flip-alternate">
+            <div class="col-5 padded-2">
+                <img src="{{ person.profile_images }}" class="profile-images bg-color"> 
             </div>
 
             <div class="col-7-middle padded-1"> 
-                <h3> {{ person.name }} </h3> 
+                <h3> Meet {{ person.name }} </h3> 
                 <p> <strong> {{ person.bio }} </strong> </p>
                 <p> {{ person.discription }} </p>
             </div>
@@ -48,5 +51,19 @@ team:
 
 
     {% endfor %}
+    </div>    
+</section>
+
+<section class="padded bg-green center">
+    <div> 
+        <h2 class="editable"> Watch our corny meet the team video </h2>
+        <p class="emphasis editable"> Feat. j-bomb the terrier </p>
+    </div> 
+    <div class="padded-1">
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ page.about-video-id }}' 
+            frameborder='0' allowfullscreen></iframe>
+        </div>
+    </div>
 
 </section>
+
