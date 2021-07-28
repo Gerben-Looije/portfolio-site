@@ -49,6 +49,8 @@ html {
 .padded-0 { padding: 0; }
 .padded-b-0 { padding-bottom: 0; }
 .margin-b-0 { margin-bottom: 0;  }
+.margin-b-1 { margin-bottom: 1rem;  }
+.margin-b-2 { margin-bottom: 2rem;  }
 
 
 .bg-rust     { background-color: #d3b4a2; }
@@ -185,6 +187,9 @@ header {
     padding-bottom: 60%;
 }
 
+featured-image { 
+    padding-bottom: 60%;
+}
 .bg-plant {
     background-image: url('/images/plant.jpg');
     background-position: 50% 43%;
