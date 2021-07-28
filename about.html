@@ -4,13 +4,15 @@ team:
  - name: Greg 
    bio: Big Boss Coder
    discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
-   profile_image: /image
- - name: Greg 
+   profile_image: /image/profile-1.jpg
+ - name: Jane
    bio: Big Boss Coder
    discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
- - name: Greg 
-   bio: Big Boss Coder
+   profile_image: /image/profile-2.jpg
+ - name: Johnny 
+   bio: Designer/ part time model
    discription: Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae minus. 
+   profile_image: /image/profile-3.jpg
 ---
 
 <section class="tall-60 grid bg-green"> 
@@ -30,8 +32,11 @@ team:
     {% for person in page.team %}
 
         <div class="grid">
-            <div class="col-5">
+            <div class="col-5 padded-1">
                 <img src="{{ person.profile_image }}">
+            </div>
+
+            <div class="col-7-middle padded-1"> 
                 <h3> {{ person.name }} </h3> 
                 <p> <strong> {{ person.bio }} </strong> </p>
                 <p> {{ person.discription }} </p>
