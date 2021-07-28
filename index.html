@@ -85,27 +85,23 @@ layout: default
 <!---------------- Features / about blocks -------------------->
 <section class="bg-rust padded" id="Projects">
     <h2 class="center"> Recent projects </h2>
+
+    {% for project in site.projects %}
+
     <div class="grid">
+        
         <div class="col-5_sm-12-middle padded"> 
-            <h3> Zen Studio Website </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad id aspernatur incidunt doloribus. Ad nisi consequatur maxime maiores eum enim, adipisci, molestias aspernatur praesentium perspiciatis laborum recusandae ipsum expedita? Ratione.</p>
-            <a href="#" class="button"> Go to site </a>
+            <h3> {{ project.title }} </h3>
+            <p> {{ project.discription }} </p>
+            <a href="{{ project.live_url }}" class="button" target="_blank"> Go to site </a>
         </div>
         <div class="col-7_sm-12-middle padded"> 
-            <img src="/images/placeholder-project.png">     
+            <img src="{{ project.featured_image }}" alt="{{ project.title }}">     
         </div>
     </div>    
 
-    <div class="grid flex-flip-sm">
-        <div class="col-7_sm-12-middle padded"> 
-            <img src="/images/placeholder-project.png" alt="project name by the collective">
-        </div>
-        <div class="col-5_sm-12-middle padded"> 
-            <h3> Another Website Name </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad id aspernatur incidunt doloribus. Ad nisi consequatur maxime maiores eum enim, adipisci, molestias aspernatur praesentium perspiciatis laborum recusandae ipsum expedita? Ratione.</p>
-            <a href="#" class="button"> Go to site </a>
-        </div>
-    </div>
+    {% endfor %}
+
 </section>
 
 
