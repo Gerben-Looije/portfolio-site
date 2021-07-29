@@ -57,7 +57,8 @@ html {
 .bg-green    { background-color: #9b9b81; }
 .bg-dark     { background-color: #a2745c; }
 
-.light-text { color: white; } 
+.light-text { color: white; }
+.dark-text { color: dark; }
 
 
 .left   { text-align: left;   }
@@ -141,11 +142,11 @@ p:last-child{
 
 .button {
     text-decoration: none;
-    border: 2px solid;
+    border: 2px solid #a2745c;
     padding: 0.5rem 1rem;
     display: inline-block;
     font-weight: 400;
-    color: white;
+    color: inherit;
 }
 
 .bg-dark .button:hover {
@@ -170,6 +171,68 @@ header {
     margin: 1rem 0;
 }
 
+/*------------- our contact form ---------------------*/
+  
+  form {
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 2%
+  }
+  
+  h1 {
+    padding: 0.5rem 0.4rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem
+  }
+  
+  form input, form texterea {
+    width: 80%;
+    margin: 0.1rem 0.5rem;
+    padding: 1rem;
+    outline: none;
+    font-family: inherid;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    border: 1.5px solid #a2745c;
+    background-color: #E5E9EE; 
+  }
+  
+  form .button {
+      display: block;
+      background:  none;
+      color: inherit;
+  }
+
+  textarea {
+    color: #4E4D4C;
+    font-family: inherid;
+    font-size: 0.9rem;
+    padding: 0.8rem 0.2rem;
+    margin: 0.3rem 0.6rem;
+    height: 8rem;
+    background-color: #E5E9EE;
+    width: 60%;
+    border: 1.5px solid #a2745c;
+  }
+  
+  form label {
+    margin: 0.1rem 0.6rem;
+    display: block;
+    font-weight: bold; 
+  }
+  
+  form button {
+    display: block;
+    color: #4E4D4C;
+    border: 1.5px solid #a2745c;
+    padding: 1% 1%;
+    margin: 0.8rem 0.8rem;
+    letter-spacing: 0.1rem;
+  }
+
 /*---------- Background images ------------*/
 .bg-image {
     background-color: rgb(240,240,240);
@@ -177,6 +240,14 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('/images/plant.jpg');
+}
+
+.pos {
+    background-position: bottom;
+}
+
+.background-pos-b {
+    background-position: bottom;
 }
 
 .profile-images {
@@ -207,6 +278,12 @@ featured-image {
 .bg-color {
     background-color:#9b9b81;
     border-radius: 100%;
+}
+
+.right-arrow {
+    max-width: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
 }
 
 /*------- Responsive youtube video --------*/
