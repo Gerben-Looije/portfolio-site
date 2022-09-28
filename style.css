@@ -239,6 +239,12 @@ header {
     outline: none;
   }
 
+  button:hover {
+    color: #a2745c;
+    transition: color 0.2s;
+    text-decoration: underline 1.1px solid #a2745c;
+  }
+
 /*---------- Background images ------------*/
 .bg-image {
     background-color: rgb(240,240,240);
