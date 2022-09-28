@@ -198,12 +198,14 @@ header {
     margin-bottom: 2rem;
     border: 1.5px solid #a2745c;
     background-color: #E5E9EE; 
+    outline: none;
   }
   
   form .button {
       display: block;
       background:  none;
       color: inherit;
+      outline: none;
   }
 
   textarea {
@@ -216,12 +218,14 @@ header {
     background-color: #E5E9EE;
     width: 60%;
     border: 1.5px solid #a2745c;
+    outline: none;
   }
   
   form label {
     margin: 0.1rem 0.6rem;
     display: block;
     font-weight: bold; 
+    outline: none;
   }
   
   form button {
@@ -231,6 +235,7 @@ header {
     padding: 1% 1%;
     margin: 0.8rem 0.8rem;
     letter-spacing: 0.1rem;
+    outline: none;
   }
 
 /*---------- Background images ------------*/
