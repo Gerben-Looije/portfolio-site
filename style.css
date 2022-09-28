@@ -211,10 +211,10 @@ header {
   textarea {
     color: #4E4D4C;
     font-family: inherid;
+    width: 80%;
     font-size: 0.9rem;
     padding: 0.8rem 0.2rem;
     margin: 0.3rem 0.6rem;
-    width: 80%;
     height: 8rem;
     background-color: #E5E9EE;
     width: 60%;
